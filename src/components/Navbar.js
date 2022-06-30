@@ -91,7 +91,7 @@ export default function Navbar() {
           </Flex> */}
         </Flex>
 
-        {/* {isOpen ? (
+        {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
               {Links.map(link => (
@@ -99,7 +99,7 @@ export default function Navbar() {
               ))}
             </Stack>
           </Box>
-        ) : null} */}
+        ) : null}
       </Box>
     </>
   );

@@ -8,7 +8,8 @@ import Menu from './pages/Menu';
 import PageNotFound from './pages/PageNotFound';
 import Navbar from './components/Navbar';
 import ItemPreview from './pages/ItemPreview';
-import TopViewItem from './pages/TopViewItem';
+import RandomImageViewer from './pages/RandomImageViewer';
+
 function App() {
   return (
     <ChakraProvider theme={theme}>
@@ -20,9 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/about" element={<About />} />
-          <Route path="/item" element={<ItemPreview />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/topview" element={<TopViewItem />} />
+          <Route path="/random" element={<RandomImageViewer />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Router>

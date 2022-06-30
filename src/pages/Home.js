@@ -52,7 +52,13 @@ const Home = () => {
             </Button>
             <HStack>
               <Text>Can't Decide ?</Text>
-              <Link>Use Coffee Roulette</Link>
+              <Link
+                onClick={() => {
+                  navigate('/random');
+                }}
+              >
+                Use Coffee Roulette
+              </Link>
             </HStack>
           </VStack>
 

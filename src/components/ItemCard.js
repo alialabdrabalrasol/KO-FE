@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Box,
   Center,
@@ -8,7 +9,7 @@ import {
   Image,
 } from '@chakra-ui/react';
 
-export default function ItemCard({ name, image, price }) {
+export default function ItemCard({name,image}) {
   return (
     <Center py={12}>
       <Box
@@ -35,7 +36,7 @@ export default function ItemCard({ name, image, price }) {
             pos: 'absolute',
             top: 5,
             left: 0,
-            backgroundImage: { image },
+            backgroundImage: image,
             filter: 'blur(15px)',
             zIndex: -1,
           }}
@@ -54,16 +55,16 @@ export default function ItemCard({ name, image, price }) {
           />
         </Box>
         <Stack pt={10} align={'center'}>
-          <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
-            {name}
-          </Text>
+          <Text
+            color={'gray.500'}
+            fontSize={'sm'}
+            textTransform={'uppercase'}
+          >{name}</Text>
           {/* <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
             Nice Chair, pink
           </Heading> */}
           <Stack direction={'row'} align={'center'}>
-            <Text fontWeight={800} fontSize={'xl'}>
-              {price}
-            </Text>
+            <Text fontWeight={800} fontSize={'xl'}></Text>
             {/* <Text textDecoration={'line-through'} color={'gray.600'}>
               $199
             </Text> */}
